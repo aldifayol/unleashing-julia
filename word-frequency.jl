@@ -17,6 +17,11 @@ function print_word_count(word_counts)
     end
 end
 
-text = ARGS[1]
-words = word_count(text)
-print_word_count(words)
+# Check if there are command-line arguments
+if length(ARGS) < 1
+    println("Please provide a sentence as a command-line argument.")
+else
+    text = ARGS[1]
+    words = word_count(text)
+    print_word_count(words)
+end
