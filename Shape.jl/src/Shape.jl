@@ -1,6 +1,8 @@
 module Shape
 
 export Square
+export Rectangle
+
 
 abstract type AbstractShape end
 abstract type Polygon <: AbstractShape end
