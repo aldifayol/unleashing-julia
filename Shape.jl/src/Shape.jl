@@ -2,6 +2,7 @@ module Shape
 
 export Square
 export Rectangle
+export area
 
 
 abstract type AbstractShape end
@@ -26,5 +27,7 @@ struct Rectangle <: Quadrilateral
 	end
 end
 
+area(shape::Square) = shape.len ^ 2
+area(shape::Rectangle) = shape.len * shape.width
 
 end # module Shape
